@@ -1,0 +1,32 @@
+<svg
+  width="215"
+  height="40"
+  viewBox="0 0 215 40"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Fernanda.dev logo">
+
+  <!-- FERNANDA -->
+  <text
+    x="0"
+    y="26"
+    font-family="Inter, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="0.6">
+    FERNANDA
+  </text>
+
+  <!-- .dev con separación equilibrada -->
+  <text
+    x="132"
+    y="26"
+    font-family="Inter, Arial, sans-serif"
+    font-size="14"
+    font-weight="500"
+    fill="#ffffff"
+    opacity="0.85">
+    .dev
+  </text>
+</svg>
