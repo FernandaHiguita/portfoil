@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PetRescue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        /*  Brand */
+
+                        primary: '#7C5CFA', //Botones principales 
+                        primarySoft: '#A78BFA', //Hover / highligths 
+                        secondary: '#C4B5FD', //Badges, chips
+
+                        /* Backgrounds */ 
+
+                        bgDark: '#1A102F', //Header / footer
+                        bgGradientFrom: '#3B1D6E', 
+                        bgGradientTo: '#1A102F', //Fondo general 
+                        bgLigth: 'F6F4FF',
+
+                        /* Cards */ 
+                        cards: '#FFFFFF', 
+                        cardSoft: '#F1EEFF',
+
+                        /* Text */ 
+
+                        textPrimary: '#2D1B4E', 
+                        textSecondary: '#6B5EA8', 
+                        textMuted: '#9A8FB5', 
+
+                        /* Accents */ 
+
+                        accentPink: "#F472B6", //Corazones / likes 
+                        accentYellow: '#FACC15', //Detaller felices 
+                        success: '#22C55E',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <p>Aquí va estar eldiseño de la pagina de mascotas</p>
+<body class="font-sans">
+    <header class="bg-gradient-to-r from-bgGradientFrom to-bgGradientTo shadow-md py-3">
+        <nav class="flex items-center justify-between mx-5">
+            <img alt="log-PetRescue">
+    
+            <ul class="flex py-5 items-center">
+                <li class="px-4 text-textMuted font-bold" >Inicio</li>
+                <li class="px-4">Buscar Mascotas</li>
+                <li class="px-4">Adoptar</li>
+                <li class="px-4">Cuidado</li>
+            </ul>
+    
+            <div class="flex ">
+                <img class="" src="./assets/svg/svg-mascotas/notification.svg" alt="icon-notification">
+                <img src="#" alt="icon-profile">
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid grid-cols-1">
+        <section class="grid grid-cols-2">
+
+            <div class="flex flex-col">
+                <h1 class="text-4xl font-bold">Encuentra a tu mascota ideal</h1>
+                <p class="font-normal">Adopta y cuida a tu nuevo amigo peludo</p>
+
+                <button class="font-semibold">Buscar Mascotas</button>
+                <button class="font-semibold">Cómo Adoptar</button>    
+            </div>    
+
+            <div class="">
+                <img src="#" alt="A girl with a pet">
+            </div>
+        </section>
+
+        <section>
+            <form>
+                <label for="opciones">Elige una opción:</label>
+                <select name="menu" id="opciones">
+                    <option value="valor0" selected>Tipo de mascota</option>
+                    <option value="valor1">Perros</option>
+                    <option value="valor2">Gatos</option>
+                    <option value="valor3">Pajaros</option>
+                </select>
+
+                <label for="opciones">Elige una opción:</label>
+                <select name="menu" id="opciones">
+                    <option value="valor0" selected>Tipo de mascota</option>
+                    <option value="valor1">Perros</option>
+                    <option value="valor2">Gatos</option>
+                    <option value="valor3">Pajaros</option>
+                </select>
+
+                <label for="opciones">Elige una opción:</label>
+                <select name="menu" id="opciones">
+                    <option value="valor0" selected>Tipo de mascota</option>
+                    <option value="valor1">Perros</option>
+                    <option value="valor2">Gatos</option>
+                    <option value="valor3">Pajaros</option>
+                </select>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
